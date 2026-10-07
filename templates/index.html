@@ -18,14 +18,16 @@
 
 
 <h1>Калькулятор уровней в майнкрафт</h1>
-<form>
+<form method="POST">
 <table border=10>
     <tr>
-        <td><input type="text"></td>
+        <td><input type="number" name='num'></td>
         <td><input type="submit"></td>
     </tr>
     <tr>
         <td>Результат</td>
-        <td>В разработке</td>
+        <td> {{ num }} </td>
 </table>
 </form>
+
+<p>Привет, {{ name }}!</p>
