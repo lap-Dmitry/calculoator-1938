@@ -1,33 +1,49 @@
 <table border=10>
+
     <tr>
         <td>Id блога</td>
         <td>Название поста</td>
         <td>Ссылка на пост</td>
     </tr>
+
     <tr>
         <td>1</td>
         <td>Пост о игре GTA 6</td>
         <td><a href='/'>Ccылка 1</a></td>
     </tr>
+
     <tr>
         <td>2</td>
         <td>Пост о фильме Человек-паук 4: Новый день</td>
         <td><a href='/'>Ccылка 2</a></td>
     </tr>
+
 </table>
 
 
-<h1>Калькулятор уровней в майнкрафт</h1>
+<h1 style="background-color: red; font-size: 100px;">Калькулятор уровней в майнкрафт</h1>
+
 <form method="POST">
+
 <table border=10>
+
     <tr>
-        <td><input type="number" name='num'></td>
+        <td><input type="number" name='num' placeholder="Введите уровень!" required></td>
+        <td><input type="text" name='name'placeholder="Введите Имя!" required></td>
         <td><input type="submit"></td>
     </tr>
+
     <tr>
         <td>Результат</td>
         <td> {{ num }} </td>
+    </tr>
+
+    <tr>
+        <td><input type="submit"></td>
+    </tr>
+
 </table>
+
 </form>
 
-<p>Привет, {{ name }}!</p>
+<p>Привет, {{ name.capitalize() }}!</p>
