@@ -1,0 +1,47 @@
+body {
+    background-color: rgba(63, 51, 128, 0.473);
+}
+
+h1 {
+    color: lightgreen;
+    background-color: lightblue;
+    font-family: "Arial";
+    text-align: center;
+    text-shadow: 1px 1px 2px green;
+}
+
+td {
+    background-color: lightblue;
+}
+
+.header {
+    background-color: darkgreen;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+@media (prefers-color-scheme: dark) {}
+
+p {
+    color: black;
+    background-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* если включена темная тема */
+    p {
+        color: white;
+        background-color: black;
+    }
+}
+
+p {
+    background-color: burlywood;
+    padding: 20px 30px;
+    border: 3px solid burlywood;
+    border-radius: 30%;
+    max-width: 50px;
+}

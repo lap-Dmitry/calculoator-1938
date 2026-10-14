@@ -1,3 +1,7 @@
+<link rel="stylesheet" href={{ url_for("static", filename="styles.css") }} />
+
+<body>
+
 <table border=10>
 
     <tr>
@@ -21,12 +25,14 @@
 </table>
 
 
-<h1 style="background-color: red; font-size: 100px;">Калькулятор уровней в майнкрафт</h1>
+<h1>Калькулятор уровней в майнкрафт</h1>
 
 <form method="POST">
 
 <table border=10>
-
+    <tr class="header">
+        <td colspan="3"><h2>Калькулятор опыта Minecraft 2.0</h2></td>
+    </tr>
     <tr>
         <td><input type="number" name='num' placeholder="Введите уровень!" required></td>
         <td><input type="text" name='name'placeholder="Введите Имя!" required></td>
@@ -47,3 +53,5 @@
 </form>
 
 <p>Привет, {{ name.capitalize() }}!</p>
+
+</body>
